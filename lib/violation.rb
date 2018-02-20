@@ -2,7 +2,8 @@ require 'csv'
 
 class Violation
 
-  def initialize
+  def initialize(csv_info)
+    consume(csv_info)
     @info = []
   end
 
