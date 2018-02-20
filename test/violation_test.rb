@@ -3,16 +3,18 @@ require 'minitest/pride'
 require '../violation.rb'
 
 class TestViolation < Minitest::Test
+attr_reader :violation 
 
   def setup
-
+    @violation = Violation.new
   end
 
   def test_it_exist
-    assert_instance_of , 
+    assert_instance_of Violation, violation
   end
 
- 
+
+
 end
 
 
